@@ -1,0 +1,45 @@
+.icon-envelope {
+  fill: getColor('secondary');
+  transition: $trensFill;
+}
+.icon-smartphon {
+  fill: getColor('secondary');
+  transition: $trensFill;
+}
+.icons-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.socialmedia-icon-item-footer {
+  @extend .socialmedia-icon-item;
+  fill: getColor('accentLight');
+}
+.socialmedia-icons-footer {
+  @extend .socialmedia-icons;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.socialmedia-icon-item {
+  fill: #afb1b8;
+  transition: $trensFill;
+  margin: auto;
+}
+.socialmedia-icons {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: $transBgColor;
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+  }
+  &:hover,
+  &:focus {
+    .socialmedia-icon-item {
+      fill: getColor('accentLight');
+    }
+  }
+}

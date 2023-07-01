@@ -1,0 +1,34 @@
+.logo-client {
+  display: flex;
+  flex-basis: calc((100% - 30px) / 2);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: $trasBorder;
+  &:hover,
+  &:focus {
+    border: 1px solid getColor('accent');
+  }
+  &__item {
+    margin: auto;
+    fill: #afb1b8;
+    transition: $trensFill;
+  }
+  &:hover,
+  &:focus {
+    .logo-client__item {
+      fill: getColor('accent');
+    }
+  }
+}
+@media #{$tablet} {
+  .logo-client {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media #{$desktop} {
+  .logo-client {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}

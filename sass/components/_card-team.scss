@@ -1,0 +1,46 @@
+.card-team {
+  background-color: getColor('accentLight');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: $fsBig;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  &__text {
+    font-size: $fsBig;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    color: getColor('secondary');
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__icons {
+    display: flex;
+    max-width: 206px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+@media #{$tablet} {
+  .card-team {
+    max-width: 354px;
+    padding-bottom: 30px;
+  }
+}
+@media #{$desktop} {
+  .card-team {
+    max-width: 270px;
+    &__icons {
+      max-width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}

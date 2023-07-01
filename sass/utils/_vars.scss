@@ -1,0 +1,26 @@
+$colors: (
+  'primary': #212121,
+  'secondary': #757575,
+  'third': #f5f4fa,
+  'accent': #2196f3,
+  'accentLight': #ffffff,
+  'accentDark': #000000,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+$ffMain: 'Roboto', sans-serif;
+$ffLogo: 'Raleway', sans-serif;
+$fsBig: 18px;
+$fsmedium: 16px;
+$fssmall: 14px;
+$fsTitle: 36px;
+$transBgColor: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$trensColor: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$trasBorder: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$trensFill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transVisibility: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transOpacity: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transTransform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$tablet: '(min-width: 768px) and (max-width: 1199px)';
+$desktop: '(min-width: 1200px)';

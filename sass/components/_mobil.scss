@@ -1,0 +1,100 @@
+.mobile-nav {
+  &__link {
+    color: getColor('primary');
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 32px;
+    transition: $trensColor;
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+    &--accent {
+      position: relative;
+      color: getColor('accent');
+    }
+  }
+}
+.mobil-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: $transTransform;
+  &__menu-toggle {
+    position: absolute;
+    top: 21px;
+    right: 25.33px;
+    background-color: getColor('accentLight');
+    border: none;
+    cursor: pointer;
+    &-icon {
+      fill: getColor('accentDark');
+      transition: $trensFill;
+      &:hover,
+      &:focus {
+        fill: getColor('accent');
+      }
+    }
+  }
+}
+.is-open {
+  transform: translateX(0);
+}
+.socialmedia-mobil {
+  display: flex;
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &--notborder {
+      border: 0;
+    }
+  }
+  &__link {
+    color: getColor('secondary');
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    transition: $trensColor;
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+}
+.contact-mobil {
+  margin-top: auto;
+  &__telephon {
+    color: getColor('secondary');
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 32px;
+    transition: $trensColor;
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+  &__email {
+    @extend .contact-mobil__telephon;
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+}

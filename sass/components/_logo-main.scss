@@ -1,0 +1,20 @@
+.logo-main {
+  font-family: $ffLogo;
+  font-size: 24px;
+  font-weight: 700;
+  color: getColor('accentDark');
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  &--accent {
+    color: getColor('accent');
+  }
+}
+@media #{$desktop} {
+  .logo-main {
+    font-size: 26px;
+  }
+}
+.logo-main-footer {
+  @extend .logo-main;
+  color: getColor('accentLight');
+}
